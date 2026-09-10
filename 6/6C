@@ -1,0 +1,10 @@
+clc;
+epsilon0 = 8.854e-12;
+A = 1e-4;
+d = 1e-3;
+er = linspace(1,1.5,100);
+C = (epsilon0 .* er .* A) ./ d;
+plot(er,C,'LineWidth',2);
+xlabel('Dielectric constant');
+ylabel('Capacitance');
+title('Capacitance vs dielectric constant (Air)');

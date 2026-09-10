@@ -1,0 +1,12 @@
+clc;
+A=input("Enter the area value=");
+d1=input("Enter thickness d1=");
+d2=input("Enter thickness d2=");
+d3=input("Enter thickness d3=");
+er1=input("Enter dielectric constant er1=");
+er2=input("Enter dielectric constant er2=");
+er3=input("Enter dielectric constant er3=");
+epsilon0=8.854e-12;
+C=epsilon0*A/((d1/er1)+(d2/er2)+(d3/er3));
+disp('The capacitance is');
+disp(C);

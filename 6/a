@@ -1,0 +1,16 @@
+clc;
+clear;
+A=input("Enter the area value=");
+d=input("Enter the thickness value=");
+epsilon0=8.854*10^-12;
+C=epsilon0*A/d;
+disp('The capacitance is');
+disp(C);
+% Plot
+x = linspace(0,10,50);
+y = C * exp(-0.1 * x);
+figure;
+plot(x,y,'LineWidth',2);
+xlabel('distance');
+ylabel('capacitance');
+title('Parallel plate capacitance');
